@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package service;
+
+option go_package = "./src/calc-service/internal/grpc/service";
+
+import "src/calc-service/internal/proto-files/model/calc.proto";
+
+service CalcService {
+    rpc Add(model.CalcRequest) returns (CalcResponse);
+}
+
+message CalcResponse {
+    int64 Result = 1;
+}

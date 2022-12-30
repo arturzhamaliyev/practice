@@ -1,0 +1,2 @@
+protoc -I ~/golang_projects --go_out=. ~/golang_projects/practice/src/calc-service/internal/proto-files/model/calc.proto
+protoc -I ~/golang_projects/practice --go-grpc_out=. ~/golang_projects/practice/src/calc-service/internal/proto-files/service/calc-service.proto 

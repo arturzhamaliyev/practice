@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package model;
+
+option go_package = "./src/calc-service/internal/grpc/model";
+
+message CalcRequest {
+    int64 x = 1;
+    int64 y = 2;
+}
